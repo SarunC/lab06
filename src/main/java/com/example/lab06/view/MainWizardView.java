@@ -79,7 +79,7 @@ public class MainWizardView extends VerticalLayout {
                     .retrieve()
                     .bodyToMono(Wizard.class)
                     .block();
-            Index = wizards.getWizards().size();
+            Index = wizards.getWizards().size()-1;
             updateAll();
             refresh();
         });
